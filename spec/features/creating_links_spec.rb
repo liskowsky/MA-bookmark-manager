@@ -7,8 +7,8 @@ feature "#creating_links" do
 
     expect(current_path).to eq '/links' #redirecting
 
-    within 'ul#links' do
-      expect(page).to have_content('Makers Academy')
+    within('ul#links') do
+      expect(page).to have_content 'Makers Academy'
     end
   end
 end
