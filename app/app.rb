@@ -16,4 +16,6 @@ class BookmarkManager < Sinatra::Base
     Link.create(url: params[:url], title: params[:title])
     redirect '/links'
   end
+
+  run! if app_file == $0
 end
